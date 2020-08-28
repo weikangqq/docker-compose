@@ -4,6 +4,8 @@ services:
     image: wurstmeister/zookeeper
     ports:
       - "2181:2181"
+    environment:
+      ZOO_ADMINSERVER_ENABLED: false
   kafka:
     image: wurstmeister/kafka
     ports:
